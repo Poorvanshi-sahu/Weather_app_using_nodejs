@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 1.3vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(153, 151, 147);
+    font-size: 20vw;
+}
+
+#nav {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 8vh;
+    background-color: rgb(224, 226, 221);
+    /* margin: auto; */
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    font-size: 1rem;
+}
+
+#navleft {
+    font-size: 1rem;
+}
+
+#navleft i {
+    margin-right: .5rem;
+    font-size: 1rem;
+    color: rgb(1, 1, 43);
+}
+
+#navleft span {
+    margin-right: .5rem;
+    color: rgb(1, 1, 43);
+}
+
+#navright {
+    display: flex;
+    font-size: 1rem;
+    color: rgb(1, 1, 43);
+}
+
+#navright a {
+    font-size: 1rem;
+    text-decoration: none;
+    margin-left: 1rem;
+    color: rgb(1, 1, 43);
+}
+
+#mid {
+    height: 93vh;
+    width: 100%;
+    display: flex;
+}
+
+#mid img {
+    overflow: hidden;
+}
+
+#left {
+    height: 100vh;
+    width: 50%;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#right {
+    height: 100vh;
+    width: 50%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#lc {
+    /* height: 50vh; */
+    width: 40vw;
+    /* background-color: blueviolet; */
+    font-size: 1.5rem;
+    color: rgb(58, 56, 56);
+}
+
+#lc h1 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+#lc h1 span {
+    color: rgb(3, 3, 107);
+}
+
+#lc button {
+    margin-top: 1rem;
+    border-radius: 1rem;
+    padding: .2rem;
+    outline: none;
+    border: .1rem solid transparent;
+    box-shadow: 0rem .1rem .1rem rgb(99, 94, 94);
+}
+
+#lc button:hover {
+    cursor: pointer;
+    box-shadow: 0rem .1rem .1rem rgb(3, 8, 80);
+}
+
+#rc {
+    height: 50vh;
+    width: 30vw;
+    /* background-color: blueviolet; */
+}
+
+#rc img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: drop-shadow(0rem 1rem 1rem rgb(58, 56, 56));
+}
+
+.fa-solid {
+    transition: all linear;
+    animation: rotate 3s linear infinite;
+}
+
+footer {
+    background-color: rgb(37, 37, 39);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(173, 169, 169);
+    font-size: .8rem;
+    line-height: 2.5rem;
+    margin-top: auto;
+}
+
+footer span {
+    color: red;
+}
+
+#mid {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+#mid form {
+    /* background-color: chartreuse; */
+    display: flex;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10rem;
+    height: 2rem;
+}
+
+#mid #infodiv {
+    height: 140px;
+    width: 14%;
+    background-color: darkblue;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#up {
+    height: 40%;
+    width: 100%;
+    background-color: rgb(79, 82, 82);
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(226, 224, 224);
+    text-transform: capitalize;
+}
+
+#down {
+    padding: .5rem .5rem;
+    height: 60%;
+    background-color: rgb(194, 189, 189);
+    display: flex;
+    flex-direction: column;
+    color: rgb(79, 82, 82);
+}
+
+#downlayer {
+    display: flex;
+    margin-top: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#cityname {
+    position: relative;
+    border: none;
+    outline: none;
+    padding: 0 .5rem;
+    width: 250%;
+    border-radius: 50px;
+    text-transform: capitalize;
+}
+
+#submitbtn {
+    position: absolute;
+    right: 5px;
+    border-radius: 50px;
+    bottom: 5px;
+    top: 5px;
+    border: none;
+    outline: none;
+    padding: 0rem .2rem;
+}
+
+#submitbtn:hover {
+    background-color: rgb(81, 85, 85);
+    color: rgb(224, 221, 221);
+}
+
+#cityn {
+    text-transform: capitalize;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

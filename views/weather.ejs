@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="/images/download.png">
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <title>Main</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="nav">
+            <div id="navleft"><i class="fa-solid fa-fan"></i><span>Weather</span><i class="fa-solid fa-fan"></i></div>
+            <div id="navright">
+                <a href="/">Home</a>
+                <a href="/weather">Weather</a>
+                <a href="/about">About</a>
+            </div>
+        </div>
+        <div id="mid">
+            <form class="form">
+                <input type="text" id="cityname" placeholder="Enter city name..." autocomplete="off">
+                <input type="submit" value="search" id="submitbtn">
+            </form>
+            <div id="infodiv">
+                <div id="up">
+                    <p id="day">Day</p>
+                    <p id="date">Date</p>
+                </div>
+                <div id="down">
+                    <p id="cityn">city</p>
+                    <div id="downlayer">
+                        <p id="temp"><span>temp</span><sup>o</sup>deg</p>
+                        <p id="status">weather symbol</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <h3>made with <span>❤</span></h3>
+        </footer>
+    </div>
+
+    <script src="../javascripts/script.js"></script>
+</body>
+
+</html>
